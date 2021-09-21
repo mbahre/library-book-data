@@ -1,0 +1,24 @@
+.form-overall {
+  border: 1px solid black;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+.form-sect {
+  text-align: left;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.form-sect label,
+input {
+  width: 100%;
+  display: block;
+  margin: 4px 0;
+}
+
+.form-sect_btn {
+  margin-bottom: 10px;
+  text-align: center;
+}
