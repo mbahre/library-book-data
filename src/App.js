@@ -66,10 +66,10 @@ function App() {
         <button onClick={findBookHandler}>Find Books</button>
       </section>
       <section>
-        {!loading && newBook.length > 0 && (
+        {!loading && !error && newBook.length > 0 && (
           <BookSummary bookInfo={newBook}></BookSummary>
         )}
-        {!loading && !error && newBook.length === 0 && <h2>No Books Found</h2>}
+        {!loading && newBook.length === 0 && <h2>No Books Found</h2>}
         {error && <h2>{error}</h2>}
         {loading && <h2>Loading...</h2>}
       </section>
